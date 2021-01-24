@@ -7,6 +7,7 @@
 - - -
 
 ## Summary
+Junior Fullstack JS developer, fond of creating web applications with mathematical education. I'm hardworking, responsive and friendly person. 
 - - -
 
 ## Skills
@@ -49,10 +50,10 @@ export class Emitter {
 
 ## Courses
 1. RS School Node.js 2020Q3   
-    [REST API](https://github.com/s1ga/rsapp-express-rest)  
-    [Node.js basics](https://github.com/s1ga/caesar-cipher-cli)
+*   [REST API](https://github.com/s1ga/rsapp-express-rest)  
+*    [Node.js basics](https://github.com/s1ga/caesar-cipher-cli)
 2. Udemy: Node.js practical course  
-   [Project](https://github.com/s1ga/courses_shop)
+*   [Project](https://github.com/s1ga/courses_shop)
 3. [JavaScript Tutorial](https://learn.javascript.ru)
 - - - 
 
