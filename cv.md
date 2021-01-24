@@ -48,6 +48,15 @@ export class Emitter {
 ~~~
 - - -
 
+## Courses
+1. RS School Node.js 2020Q3   
+    [REST API](https://github.com/s1ga/rsapp-express-rest)  
+    [Node.js basics](https://github.com/s1ga/caesar-cipher-cli)
+2. Udemy: Node.js practical course  
+   [Project](https://github.com/s1ga/courses_shop)
+3. [JavaScript Tutorial](https://learn.javascript.ru)
+- - - 
+
 ## Education
 ### Belarusian State University (2019 - present)  
 Mechanics and Mathematics faculty, Bachelor
