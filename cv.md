@@ -14,7 +14,6 @@
 **Frameworks:** React, Node.js, Express.js,   
 **Technologies:** GIT, Docker, Swagger, Redux, Saga  
 **Software:** Webstorm, Visual Studio Code, Figma 
-
 - - -
 
 ## Code example
@@ -60,7 +59,6 @@ export class Emitter {
 ## Education
 ### Belarusian State University (2019 - present)  
 Mechanics and Mathematics faculty, Bachelor
-
 - - -
 
 ## English 
