@@ -66,17 +66,57 @@
 
         <section class="main-section">
             <h2 class="section-title">Education</h2>
-            <p class="section-text">Junior Fullstack JS developer, fond of creating web applications with mathematical education. I'm hardworking, responsive and friendly person.</p>
+            <p class="section-text">
+                <p>Belarusian State University (2019 - present)</p>
+                <p>Mechanics and mathematics faculty, Bachelor</p>
+            </p>
         </section>
 
         <section class="main-section">
             <h2 class="section-title">English</h2>
-            <p class="section-text">Junior Fullstack JS developer, fond of creating web applications with mathematical education. I'm hardworking, responsive and friendly person.</p>
+            <p class="section-text">
+                <ul class="section-list">
+                    <li class="section-list-item">
+                        <span>Level: </span> A2 - B1
+                    </li>
+                </ul>
+            </p>
         </section>
 
         <section class="main-section">
             <h2 class="section-title">Code example</h2>
-            <p class="section-text">Junior Fullstack JS developer, fond of creating web applications with mathematical education. I'm hardworking, responsive and friendly person.</p>
+            <p class="section-text">
+                <pre>
+                    <code>
+        // Self implementation of event emitter 
+        export class Emitter {
+            constructor() {
+                this.listeners = {}
+            }
+
+            emit(event, ...args) {
+                if (!Array.isArray(this.listeners[event])) {
+                    return false
+                }
+                this.listeners[event].forEach(listener => {
+                    listener(...args)
+                })
+
+                return true
+            }
+
+            subscribe(event, fn) {
+                this.listeners[event] = this.listeners[event] || []
+                this.listeners[event].push(fn)
+            
+                return () => {
+                    this.listeners[event] = this.listeners[event].filter(listener => listener !== fn)
+                }
+            }
+        }
+                    </code>
+                </pre>
+            </p>
         </section>
     </main>
 </div>
