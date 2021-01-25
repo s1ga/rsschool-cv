@@ -13,12 +13,12 @@ body {
     width: 70%;
     margin: 0 auto;
     background-color: #fff;
+    color: #000;
     letter-spacing: 0.7px;
 }
 
 .header {
     padding-top: 10px;
-    color: #000;
 }
 
 .title {
@@ -73,8 +73,7 @@ body {
 
 .main {
     width: 85%;
-    margin: 0 auto;
-    margin-top: 60px;
+    margin: 60px auto 0;
 }
 
 .main-section:last-child {
