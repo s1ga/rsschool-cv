@@ -67,6 +67,10 @@ body {
     font-weight: bold;
 }
 
+.section-text-paragraph {
+    margin-top: 12px;
+}
+
 .main {
     width: 85%;
     margin: 0 auto;
@@ -83,4 +87,14 @@ body {
 
 .section-order-list {
     margin-left: 20px;
+}
+
+.section-order-list-item {
+    margin-bottom: 15px;
+}
+
+.section-order-list-item ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-type: square;
 }
