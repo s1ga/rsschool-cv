@@ -28,7 +28,7 @@ body {
     font-size: 38px;
 }
 
-.contact-info-wrapper {
+.contact-info {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
@@ -45,6 +45,7 @@ body {
 }
 
 .section-title {
+    font-weight: bold;
     font-size: 26px;
     margin-bottom: 25px;
 }
@@ -52,7 +53,7 @@ body {
 .section-title::after {
     content: '';
     display: block;
-    width: 280px;
+    width: 320px;
     height: 2px;
     background-color: #000;
 }
