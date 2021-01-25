@@ -47,7 +47,7 @@
         <section class="main-section">
             <h2 class="section-title">Courses</h2>
             <p class="section-text">
-                <ol>
+                <ol class="section-order-list">
                     <li>
                         RS School Node.js 2020Q3
                         <ul>
@@ -88,32 +88,32 @@
             <p class="section-text">
                 <pre>
                     <code>
-        // Self implementation of event emitter 
-        export class Emitter {
-            constructor() {
-                this.listeners = {}
-            }
+// Self implementation of event emitter 
+export class Emitter {
+    constructor() {
+        this.listeners = {}
+    }
 
-            emit(event, ...args) {
-                if (!Array.isArray(this.listeners[event])) {
-                    return false
-                }
-                this.listeners[event].forEach(listener => {
-                    listener(...args)
-                })
-
-                return true
-            }
-
-            subscribe(event, fn) {
-                this.listeners[event] = this.listeners[event] || []
-                this.listeners[event].push(fn)
-            
-                return () => {
-                    this.listeners[event] = this.listeners[event].filter(listener => listener !== fn)
-                }
-            }
+    emit(event, ...args) {
+        if (!Array.isArray(this.listeners[event])) {
+            return false
         }
+        this.listeners[event].forEach(listener => {
+            listener(...args)
+        })
+
+        return true
+    }
+
+    subscribe(event, fn) {
+        this.listeners[event] = this.listeners[event] || []
+        this.listeners[event].push(fn)
+            
+        return () => {
+            this.listeners[event] = this.listeners[event].filter(listener => listener !== fn)
+        }
+    }
+}
                     </code>
                 </pre>
             </p>

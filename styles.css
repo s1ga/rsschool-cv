@@ -13,6 +13,7 @@ body {
     width: 70%;
     margin: 0 auto;
     background-color: #fff;
+    letter-spacing: 0.7px;
 }
 
 .header {
@@ -59,7 +60,6 @@ body {
 }
 
 .section-list-item {
-    letter-spacing: 0.7px;
     margin-bottom: 18px;
 }
 
@@ -68,7 +68,9 @@ body {
 }
 
 .main {
-    
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .main-section:last-child {
@@ -76,10 +78,9 @@ body {
 }
 
 .main-section {
-    /* margin-left: 20px; */
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-.section-text {
-
+.section-order-list {
+    margin-left: 20px;
 }
