@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>CV - Sergey Harlanov</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 class="title">Sergey Harlanov</h1>
+
+        <div class="contact-info">
+            <img class="contact-info-photo" src="img/myphoto.jpg" alt="Sergey Harlanov photo">
+            <details class="contact-info-content">
+                <summary class="section-title">Contact information</summary>
+                <ul class="section-list">
+                    <li class="section-list-item"><span>Phone: </span>+375(29)122-12-68</li>
+                    <li class="section-list-item"><span>Email: </span><a>s.v.harlanov@gmail.com</a></li>
+                    <li class="section-list-item"><span>Discord: </span>s1ga</li>
+                </ul>
+            </details>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main-section">
+            <h2 class="section-title">Summary</h2>
+            <div class="section-content">Junior Fullstack JS developer with mathematical education, fond of creating web applications. I'm hardworking, responsive and friendly person.</div>
+        </section>
+
+        <section class="main-section">
+            <h2 class="section-title">Skills</h2>
+            <div class="section-content">
+                <ul class="section-list">
+                    <li class="section-list-item"><span>Languages: </span>HTML, CSS, JS, SQL</li>
+                    <li class="section-list-item"><span>Frameworks: </span>React.js, Node.js, Express.js</li>
+                    <li class="section-list-item"><span>Technologies: </span>GIT, Docker, Swagger, Redux, Saga</li>
+                    <li class="section-list-item"><span>Software: </span>Webstorm, Visual Studio Code, Figma</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h2 class="section-title">Courses</h2>
+            <div class="section-content">
+                <ol class="section-order-list">
+                    <li class="section-order-list-item">
+                        RS School Node.js 2020Q3
+                        <ul>
+                            <li><a href="https://github.com/s1ga/rsapp-express-rest" target="_blank">REST API</a></li>
+                            <li><a href="https://github.com/s1ga/caesar-cipher-cli" target="_blank">Node.js basics</a></li>
+                        </ul>
+                    </li>
+                    <li class="section-order-list-item">
+                        Udemy: Node.js practical course
+                        <ul>
+                            <li><a href="https://github.com/s1ga/courses_shop" target="_blank">Project</a></li>
+                        </ul>
+                    </li>
+                    <li class="section-order-list-item"><a href="https://learn.javascript.ru" target="_blank">JavaScript tutorial</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h2 class="section-title">Education</h2>
+            <div class="section-content">
+                <p class="section-text">Belarusian State University (2019 - present)</p>
+                <p class="section-text">Mechanics and mathematics faculty, Bachelor</p>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h2 class="section-title">English</h2>
+            <div class="section-content">
+                <ul class="section-list">
+                    <li class="section-list-item">
+                        <span>Level: </span> A2 - B1
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h2 class="section-title">Code example</h2>
+            <div class="section-content">
+                <pre>
+                    <code>
+// Self implementation of event emitter 
+export class Emitter {
+
+constructor() {
+    this.listeners = {}
+}
+
+emit(event, ...args) {
+    if (!Array.isArray(this.listeners[event])) {
+        return false
+    }
+    this.listeners[event].forEach(listener => {
+        listener(...args)
+    })
+
+    return true
+}
+
+subscribe(event, fn) {
+    this.listeners[event] = this.listeners[event] || []
+    this.listeners[event].push(fn)
+            
+    return () => {
+    this.listeners[event] = this.listeners[event].filter(listener => listener !== fn)
+    }
+}
+
+}
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightskyblue; 
+    font-size: 18px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+    letter-spacing: 0.7px;
+    padding-bottom: 1px;
+}
+
+.header {
+    padding-top: 15px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 38px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.contact-info-photo {
+    display: block;
+    justify-self: end;
+    height: 280px;
+    width: auto;
+    border-radius: 10%;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 320px;
+    height: 2px;
+    background-color: #000;
+}
+
+.section-list {
+    list-style-type: none;
+}
+
+.section-list-item {
+    margin-bottom: 18px;
+}
+
+.section-list-item > span {
+    font-weight: bold;
+}
+
+.section-text-paragraph {
+    margin-top: 12px;
+}
+
+.main {
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+.main-section:last-child {
+    margin-left: 0px;
+}
+
+.main-section {
+    margin-bottom: 50px;
+}
+
+.section-order-list {
+    margin-left: 20px;
+}
+
+.section-order-list-item {
+    margin-bottom: 15px;
+}
+
+.section-order-list-item ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-type: square;
+}
